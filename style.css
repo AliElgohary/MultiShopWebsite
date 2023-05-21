@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --grey: #f5f5f5;
+  --darkText: #6C757D;
+  --yellow: #FFD333;
+  --darkGrey: #3b434b;
+  --lightText: #6c757d;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.firstHeader {
+  display: flex;
+  background-color: var(--grey);
+  justify-content: space-between;
+  padding: 3px 40px;
+}
+.leftNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftNav ul li:hover{
+    text-decoration: underline;
+  }
+
+.leftNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+}
+
+.leftNav ul li a {
+  color: var(--lightText);
+}
+.rightNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightNav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  color: var(--darkText);
+}
+.rightNav > ul li {
+  background-color: white;
+  padding: 5px;
+  color: var(--darkText);
+}
+.rightNav ul li a {
+  color: black;
+}
+.dropDown {
+  display: none;
+  background-color: white;
+  border: 1px solid #ced4da;
+}
+li:hover .dropDown {
+  padding: 20px;
+  position: absolute;
+  display: block;
+  margin-top: 7px;
+  width: 120px;
+}
+
+.logoHeader {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+.logoHeader .logo {
+  display: flex;
+  background-color: #fad334;
+}
+.logoHeader .logo .multi {
+  background-color: var(--darkGrey);
+  padding: 0 6px;
+}
+.logoHeader .logo .shop {
+  background-color: var(--yellow);
+  padding: 0 6px;
+}
+
+.searchBar {
+  padding: 10px;
+  font-size: 17px;
+  border:1px solid #ced4da;
+  width: 300px;
+  background: #f1f1f1;
+  margin: 0;
+}
+.searchIcon {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #ced4da;
+  color: var(--yellow);
+  margin: 0;
+}
+.customerService h4 {
+  color: var(--lightText);
+}
+.customerService h3 {
+  color: var(--darkGrey);
+}
+
+.mainMenu {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  background-color: var(--darkGrey);
+  padding: 0 40px;
+}
+
+.mainMenu div ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  color: var(--darkText);
+}
+.mainMenu div ul li {
+  padding: 17px;
+}
+.mainMenu div ul li a {
+  color: white;
+}
+
+.mainMenu div ul .categories {
+  background-color: var(--yellow);
+  color: var(--lightText);
+}
+.mainMenu div ul .categories a {
+  color: var(--darkText);
+}
+.mainMenu div ul .categories a span {
+  padding-left: 5px;
+  padding-right: 60px;
+}
+.categories {
+  position: relative;
+}
+
+.catList {
+  display: none;
+  background-color: white;
+}
+li:hover .catList {
+  position: absolute;
+  display: flex;
+  margin-top: 17px;
+  padding-right: 0px;
+}
+li:hover .catList ul {
+  display: block;
+  position: relative;
+  width: 198px;
+  right: 18px;
+}
+li:hover .catList ul li {
+  border: 1px solid #ced4da;
+  padding: 15px 15px;
+  line-height: 10px;
+}
+
+.pageList {
+    display: none;
+    background-color: white;
+  }
+  li:hover .pageList {
+    position: absolute;
+    display: flex;
+    margin-top: 17px;
+    padding-right: 0px;
+  }
+  li:hover .pageList ul {
+    display: block;
+    position: relative;
+    width: 198px;
+    right: 18px;
+  }
+  li:hover .pageList ul li {
+    padding: 15px 15px;
+    line-height: 10px;
+    background-color: var(--yellow);
+  }
+  li:hover .pageList ul li a{
+    color: black;
+  }
+  .rightMenu ul li span{
+    border: 1px solid white;
+    padding: 5px 8px;
+    border-radius: 50%;
+  }
+  .rightMenu ul li i {
+    display: inline-block;
+  }
