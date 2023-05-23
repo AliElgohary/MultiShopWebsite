@@ -48,12 +48,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .rightNav > ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.7em;
+  gap: 10px;
   color: var(--darkText);
 }
 .rightNav > ul li {
@@ -63,6 +64,9 @@ li {
 }
 .rightNav ul li a {
   color: black;
+}
+.resposiveLogoCarts, .responsiveList{
+  display: none;
 }
 .dropDown {
   display: none;
@@ -76,7 +80,9 @@ li:hover .dropDown {
   margin-top: 7px;
   width: 120px;
 }
-
+.resposivelogoHeader, .resposiveRightMenu{
+  display: none;
+}
 .logoHeader {
   display: flex;
   background-color: white;
@@ -208,4 +214,86 @@ li:hover .catList ul li {
   }
   .rightMenu ul li i {
     display: inline-block;
+  }
+  @media screen and (max-width: 1000px) {
+    .firstHeader .leftNav{
+      display: none;
+    }
+    .resposiveLogoCarts{
+      display: flex;
+    }
+
+    .rightNav{
+      display: inline-block;
+      justify-content: center;
+      width: 100%;
+      padding: 6px 0;
+      color: var(--darkGrey);
+      font-size: small;
+    }
+    .resposivelogoHeader{
+      display: block;
+    }
+    .logoHeader{
+      display: none;
+    }
+    .mainMenu .categories, .rightMenu,.elements , .catList {
+      display: none;
+    }
+   
+    .resposivelogoHeader{
+      float: left;
+    }
+    .resposivelogoHeader .logo {
+      display: flex;
+      background-color: #fad334;
+      font-size: large;      
+    }
+    .resposivelogoHeader .logo .multi {
+      background-color: var(--grey);
+      padding: 0 6px;
+      color: var(--darkGrey);
+    }
+    .resposivelogoHeader .logo .shop {
+      background-color: var(--yellow);
+      padding: 0 6px;
+      color: white;
+      display: flex;
+    }
+    .resposiveRightMenu{
+      display: flex;
+    }
+    .responsiveMenu ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--darkText);
+      padding: 20px;
+      background-color: var(--darkGrey);
+      height: fit-content;
+    }
+    .responsiveList {
+      display: none;
+    }
+    .responsiveList ul{
+      width: 100%;
+    }
+    .responsiveMenu {
+      position: relative;
+    }
+    .responsiveMenu:hover .responsiveList {
+      position: relative;
+      display: flex;
+    }
+    .responsiveMenu:hover .responsiveList ul {
+      display: block;
+      position: relative;
+    }
+    .responsiveMenu:hover .responsiveList ul li {
+      padding: 15px 15px;
+      line-height: 10px;
+    }
+    .responsiveMenu:hover .responsiveList ul li a{
+      color: white;
+    }
   }
