@@ -78,6 +78,7 @@ li {
   display: none;
   background-color: white;
   border: 1px solid #ced4da;
+  z-index: 1;
 }
 li:hover .dropDown {
   padding: 20px;
@@ -111,17 +112,19 @@ li:hover .dropDown {
 }
 
 .searchBar {
-  padding: 10px;
+  padding: 8px;
   font-size: 17px;
   border:1px solid #ced4da;
-  width: 300px;
-  background: #f1f1f1;
+  width: 400px;
+  background: white;
   margin: 0;
 }
 .searchIcon {
-  padding: 10px;
+  padding: 8px;
   font-size: 17px;
+  background-color: white;
   border: 1px solid #ced4da;
+  border-left: 0;
   color: var(--yellow);
   margin: 0;
 }
@@ -183,7 +186,7 @@ li:hover .catList {
 li:hover .catList ul {
   display: block;
   position: relative;
-  width: 198px;
+  width: 207px;
   right: 18px;
   background-color: white;
 
@@ -192,12 +195,13 @@ li:hover .catList ul li {
   border: 1px solid #ced4da;
   padding: 15px 15px;
   line-height: 10px;
-
 }
-
+li:hover .catList ul li a:hover{
+  color: black;
+}
 .pageList {
     display: none;
-    background-color: white;
+    z-index: 1;
   }
   li:hover .pageList {
     position: absolute;
@@ -208,13 +212,10 @@ li:hover .catList ul li {
   li:hover .pageList ul {
     display: block;
     position: relative;
-    width: 198px;
-    right: 18px;
-  }
-  li:hover .pageList ul li {
-    padding: 15px 15px;
-    line-height: 10px;
     background-color: var(--yellow);
+  }
+  li:hover .pageList ul li:hover {
+    background-color: var(--grey);
   }
   li:hover .pageList ul li a{
     color: black;
@@ -330,7 +331,6 @@ li:hover .catList ul li {
     position: relative;
   } 
   .RightImg1{
-
     position: relative;
   } 
 
@@ -385,5 +385,45 @@ li:hover .catList ul li {
   @media screen and (max-width: 1000px) {
     .wrapper {
       grid-template-columns: 1fr
+  }
+}
+
+.adventage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 100px;
+  font-size: x-large;
+  margin: 30px;
+
+}
+.adventage h1{
+  display: inline-block;
+  color: var(--yellow);
+  margin: 0;
+  font-size: 60px;
+}
+.adventage h5{
+  display: inline-block;
+  color: black;
+  margin: 0;
+}
+.adventages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1000px){
+  .adventages{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media screen and (max-width: 600px){
+  .adventages{
+    display: grid;
+    grid-template-columns: 1fr ;
   }
 }
