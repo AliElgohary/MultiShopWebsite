@@ -4,6 +4,9 @@
   margin: 0;
   font-family:Roboto ;
 }
+body{
+  background-color: var(--grey);
+}
 :root {
   --grey: #f5f5f5;
   --darkText: #6C757D;
@@ -94,15 +97,17 @@ li:hover .dropDown {
 }
 .logoHeader .logo {
   display: flex;
-  background-color: #fad334;
+  align-items: center;
 }
 .logoHeader .logo .multi {
   background-color: var(--darkGrey);
-  padding: 0 6px;
+  padding: 5px 5px;
+  
 }
 .logoHeader .logo .shop {
   background-color: var(--yellow);
-  padding: 0 6px;
+  padding: 5px 5px;
+  
 }
 
 .searchBar {
@@ -377,7 +382,6 @@ li:hover .catList ul li {
     margin: auto;
     font-size: large;
   }
-
   @media screen and (max-width: 1000px) {
     .wrapper {
       grid-template-columns: 1fr
