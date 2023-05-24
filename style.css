@@ -541,19 +541,18 @@ h5 {
   }
 }
 
-
-.twoImgs{
+.twoImgs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 40px;
 }
-.theImg{
+.theImg {
   position: relative;
 }
-.theImg img{
+.theImg img {
   width: 100%;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .theImgHeader {
@@ -563,7 +562,8 @@ h5 {
   transform: translate(-50%, -50%);
 }
 
-.theImgHeader h2,h4 {
+.theImgHeader h2,
+h4 {
   display: block;
   text-align: center;
   color: white;
@@ -578,7 +578,7 @@ h5 {
   width: 100px;
   height: 40px;
 }
-.imgButton{
+.imgButton {
   padding: 30px;
 }
 .theImgHeader button span {
@@ -592,14 +592,14 @@ h5 {
   }
 }
 
-.sponsers{
+.sponsers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
   align-items: center;
   padding: 40px;
 }
-.sponsers div > img{
+.sponsers div > img {
   width: 100%;
 }
 
