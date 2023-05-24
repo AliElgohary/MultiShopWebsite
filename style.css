@@ -95,6 +95,7 @@ li:hover .dropDown {
 .logoHeader {
   display: flex;
   background-color: white;
+  align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
 }
@@ -329,9 +330,11 @@ li:hover .pageList ul li a {
 .leftImg {
   grid-row: 1/3;
   position: relative;
+  overflow: clip;
 }
 .RightImg1 {
   position: relative;
+  overflow: clip;
 }
 
 .imgHerder {
@@ -452,22 +455,26 @@ h5 {
   background-color: white;
   color: black;
 }
-
+.catImg{
+  overflow: clip;
+}
 .categorie .catImg > img {
   width: 100px;
-  height: 100px;
+  height: 100%;
+  
 }
 .categorie .description {
   display: block;
-  padding-left: 20px;
-}
+  }
 .categorie div > h4 {
   color: var(--darkGrey);
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 .categorie div > span {
   font-size: small;
   color: var(--darkText);
+  padding-left: 20px;
 }
 @media screen and (max-width: 1000px) {
   .catSection {
@@ -549,6 +556,8 @@ h5 {
 }
 .theImg {
   position: relative;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 .theImg img {
   width: 100%;
@@ -612,4 +621,31 @@ h4 {
   .sponsers {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.leftImg,.RightImg1, img,.twoImgs {
+  transition: 0.5s;
+}
+.RightImg1:hover img{
+  transform: scale(1.2) rotate(5deg);
+  transition: all 0.3s ease-in-out ;
+}
+.theImg:hover img{
+  transform: scale(1.2) rotate(5deg);
+  transition: all 0.3s ease-in-out ;
+}
+.leftImg:hover img{
+  transform: scale(1.2) rotate(5deg);
+  transition: all 0.3s ease-in-out ;
+}
+.catImg img {
+  transition: .2s;
+}
+.catSection:hover div:hover img{
+  transform: scale(1.2) rotate(5deg);
+  transition: all 0.3s ease-in-out ;
+  background-color: white;
+}
+.catSection:hover div:hover {
+  background-color: var(--yellow);
 }
