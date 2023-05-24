@@ -2,19 +2,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family:Roboto ;
+  font-family: Roboto;
 }
-body{
+body {
   background-color: var(--grey);
 }
 :root {
   --grey: #f5f5f5;
-  --darkText: #6C757D;
-  --yellow: #FFD333;
+  --darkText: #6c757d;
+  --yellow: #ffd333;
   --darkGrey: #3b434b;
   --lightText: #6c757d;
 }
-button{
+button {
   cursor: pointer;
 }
 a {
@@ -36,9 +36,9 @@ li {
   justify-content: center;
 }
 
-.leftNav ul li:hover{
-    text-decoration: underline;
-  }
+.leftNav ul li:hover {
+  text-decoration: underline;
+}
 
 .leftNav ul {
   display: flex;
@@ -54,7 +54,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .rightNav > ul {
   display: flex;
@@ -72,7 +71,8 @@ li {
   color: black;
   font-size: small;
 }
-.resposiveLogoCarts, .responsiveList{
+.resposiveLogoCarts,
+.responsiveList {
   display: none;
 }
 .dropDown {
@@ -88,7 +88,8 @@ li:hover .dropDown {
   margin-top: 7px;
   width: 120px;
 }
-.resposivelogoHeader, .resposiveRightMenu{
+.resposivelogoHeader,
+.resposiveRightMenu {
   display: none;
 }
 .logoHeader {
@@ -104,18 +105,16 @@ li:hover .dropDown {
 .logoHeader .logo .multi {
   background-color: var(--darkGrey);
   padding: 5px 5px;
-  
 }
 .logoHeader .logo .shop {
   background-color: var(--yellow);
   padding: 5px 5px;
-  
 }
 
 .searchBar {
   padding: 8px;
   font-size: 17px;
-  border:1px solid #ced4da;
+  border: 1px solid #ced4da;
   width: 400px;
   background: white;
   margin: 0;
@@ -182,7 +181,6 @@ li:hover .catList {
   display: flex;
   margin-top: 17px;
   padding-right: 0px;
-  
 }
 li:hover .catList ul {
   display: block;
@@ -190,203 +188,203 @@ li:hover .catList ul {
   width: 207px;
   right: 18px;
   background-color: white;
-
 }
 li:hover .catList ul li {
   border: 1px solid #ced4da;
   padding: 15px 15px;
   line-height: 10px;
 }
-li:hover .catList ul li a:hover{
+li:hover .catList ul li a:hover {
   color: black;
 }
 .pageList {
+  display: none;
+  z-index: 1;
+}
+li:hover .pageList {
+  position: absolute;
+  display: flex;
+  margin-top: 17px;
+  padding-right: 0px;
+}
+li:hover .pageList ul {
+  display: block;
+  position: relative;
+  background-color: var(--yellow);
+}
+li:hover .pageList ul li:hover {
+  background-color: var(--grey);
+}
+li:hover .pageList ul li a {
+  color: black;
+}
+.rightMenu ul li span {
+  border: 1px solid white;
+  padding: 5px 7px;
+  border-radius: 50%;
+}
+.rightMenu ul li i {
+  display: inline-block;
+  color: var(--yellow);
+}
+@media screen and (max-width: 1000px) {
+  .firstHeader .leftNav {
     display: none;
-    z-index: 1;
   }
-  li:hover .pageList {
-    position: absolute;
+  .resposiveLogoCarts {
     display: flex;
-    margin-top: 17px;
-    padding-right: 0px;
   }
-  li:hover .pageList ul {
-    display: block;
-    position: relative;
-    background-color: var(--yellow);
-  }
-  li:hover .pageList ul li:hover {
-    background-color: var(--grey);
-  }
-  li:hover .pageList ul li a{
-    color: black;
-  }
-  .rightMenu ul li span{
-    border: 1px solid white;
-    padding: 5px 7px;
-    border-radius: 50%;
-  }
-  .rightMenu ul li i {
+
+  .rightNav {
     display: inline-block;
-    color: var(--yellow);
+    justify-content: center;
+    width: 100%;
+    padding: 6px 0;
+    color: var(--darkGrey);
+    font-size: small;
   }
-  @media screen and (max-width: 1000px) {
-    .firstHeader .leftNav{
-      display: none;
-    }
-    .resposiveLogoCarts{
-      display: flex;
-    }
-
-    .rightNav{
-      display: inline-block;
-      justify-content: center;
-      width: 100%;
-      padding: 6px 0;
-      color: var(--darkGrey);
-      font-size: small;
-    }
-    .resposivelogoHeader{
-      display: block;
-    }
-    .logoHeader{
-      display: none;
-    }
-    .mainMenu .categories, .rightMenu,.elements , .catList {
-      display: none;
-    }
-   
-    .resposivelogoHeader{
-      float: left;
-    }
-    .resposivelogoHeader .logo {
-      display: flex;
-      background-color: #fad334;
-      font-size: large;      
-    }
-    .resposivelogoHeader .logo .multi {
-      background-color: var(--grey);
-      padding: 0 6px;
-      color: var(--darkGrey);
-    }
-    .resposivelogoHeader .logo .shop {
-      background-color: var(--yellow);
-      padding: 0 6px;
-      color: white;
-      display: flex;
-    }
-    .resposiveRightMenu{
-      display: flex;
-    }
-    .responsiveMenu ul{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: var(--darkText);
-      padding: 20px;
-      background-color: var(--darkGrey);
-      height: fit-content;
-    }
-    .responsiveList {
-      display: none;
-    }
-    .responsiveList ul{
-      width: 100%;
-    }
-    .responsiveMenu {
-      position: relative;
-    }
-    .responsiveMenu:hover .responsiveList {
-      position: relative;
-      display: flex;
-    }
-    .responsiveMenu:hover .responsiveList ul {
-      display: block;
-      position: relative;
-    }
-    .responsiveMenu:hover .responsiveList ul li {
-      padding: 15px 15px;
-      line-height: 10px;
-    }
-    .responsiveMenu:hover .responsiveList ul li a{
-      color: white;
-    }
-  }
-
-  .wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-    padding: 40px;
-    
-
-  }
-  .wrapper img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: .8;
-  }
-
-  .leftImg{
-    grid-row: 1/3;
-    position: relative;
-  } 
-  .RightImg1{
-    position: relative;
-  } 
-
-
-  .imgHerder {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .imgHerder h1, p  {
-    text-align: center;
-    color: white;
-    padding-bottom: 20px;
-  }
-  .imgHerder h1{
-    padding: 20px;
-    padding-bottom: 20px;
-    font-size: xx-large;
-  }
-  .imgHerder button{
+  .resposivelogoHeader {
     display: block;
-    margin: auto;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    width: 120px;
-    height: 50px;
   }
-  .imgHerder button span{
-    margin: auto;
-    font-size: x-large;
+  .logoHeader {
+    display: none;
   }
-  .RightImg1 h2,h5{
-    padding: 20px;
-    color: white;
+  .mainMenu .categories,
+  .rightMenu,
+  .elements,
+  .catList {
+    display: none;
+  }
 
+  .resposivelogoHeader {
+    float: left;
   }
-  .RightImg1 button{
-    display: block;
-    margin: auto;
-    color: black;
-    background-color: var(--yellow);
-    border: none;
-    width: 100px;
-    height: 40px;
-  }
-  .RightImg1 button span{
-    margin: auto;
+  .resposivelogoHeader .logo {
+    display: flex;
+    background-color: #fad334;
     font-size: large;
   }
-  @media screen and (max-width: 1000px) {
-    .wrapper {
-      grid-template-columns: 1fr
+  .resposivelogoHeader .logo .multi {
+    background-color: var(--grey);
+    padding: 0 6px;
+    color: var(--darkGrey);
+  }
+  .resposivelogoHeader .logo .shop {
+    background-color: var(--yellow);
+    padding: 0 6px;
+    color: white;
+    display: flex;
+  }
+  .resposiveRightMenu {
+    display: flex;
+  }
+  .responsiveMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--darkText);
+    padding: 20px;
+    background-color: var(--darkGrey);
+    height: fit-content;
+  }
+  .responsiveList {
+    display: none;
+  }
+  .responsiveList ul {
+    width: 100%;
+  }
+  .responsiveMenu {
+    position: relative;
+  }
+  .responsiveMenu:hover .responsiveList {
+    position: relative;
+    display: flex;
+  }
+  .responsiveMenu:hover .responsiveList ul {
+    display: block;
+    position: relative;
+  }
+  .responsiveMenu:hover .responsiveList ul li {
+    padding: 15px 15px;
+    line-height: 10px;
+  }
+  .responsiveMenu:hover .responsiveList ul li a {
+    color: white;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 40px;
+}
+.wrapper img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.leftImg {
+  grid-row: 1/3;
+  position: relative;
+}
+.RightImg1 {
+  position: relative;
+}
+
+.imgHerder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgHerder h1,
+p {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+}
+.imgHerder h1 {
+  padding: 20px;
+  padding-bottom: 20px;
+  font-size: xx-large;
+}
+.imgHerder button {
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 120px;
+  height: 50px;
+}
+.imgHerder button span {
+  margin: auto;
+  font-size: x-large;
+}
+.RightImg1 h2,
+h5 {
+  padding: 20px;
+  color: white;
+}
+.RightImg1 button {
+  display: block;
+  margin: auto;
+  color: black;
+  background-color: var(--yellow);
+  border: none;
+  width: 100px;
+  height: 40px;
+}
+.RightImg1 button span {
+  margin: auto;
+  font-size: large;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -400,36 +398,34 @@ li:hover .catList ul li a:hover{
   height: 100px;
   font-size: x-large;
   padding: 20px;
-
 }
-.adventage h1{
+.adventage h1 {
   display: inline-block;
   color: var(--yellow);
   margin: 0;
   font-size: 60px;
 }
-.adventage h5{
+.adventage h5 {
   display: inline-block;
   color: black;
   margin: 0;
 }
-.adventages{
+.adventages {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   padding: 40px;
-
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .adventages {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .adventages {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -438,19 +434,17 @@ li:hover .catList ul li a:hover{
   font-weight: 700;
   color: var(--darkGrey);
   font-size: xx-large;
-  
 }
 
-
-.catSection{
+.catSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   padding: 40px;
 }
 
-.categorie{
+.categorie {
   display: flex;
   align-items: center;
   width: 100%;
@@ -463,11 +457,11 @@ li:hover .catList ul li a:hover{
   width: 100px;
   height: 100px;
 }
-.categorie .description{
+.categorie .description {
   display: block;
   padding-left: 20px;
 }
-.categorie div > h4{
+.categorie div > h4 {
   color: var(--darkGrey);
   padding-bottom: 20px;
 }
@@ -475,13 +469,74 @@ li:hover .catList ul li a:hover{
   font-size: small;
   color: var(--darkText);
 }
-@media screen and (max-width: 1000px){
-  .catSection{
+@media screen and (max-width: 1000px) {
+  .catSection {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 600px){
-  .catSection{
+@media screen and (max-width: 600px) {
+  .catSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  display: inline-block;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.product .proImg > img {
+  width: 100%;
+}
+.product .proDescription {
+  display: flex;
+  width: 100%;
+  display: inline-block;
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+}
+.product .proDescription h4 {
+  padding: 20px;
+  color: var(--darkGrey);
+}
+.product .proDescription h3 {
+  display: inline-block;
+  color: var(--darkGrey);
+}
+.product .proDescription .discount {
+  text-decoration: line-through;
+  color: var(--lightText);
+  margin-left: 20px;
+}
+.rating {
+  display: flex;
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 1000px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .products {
     grid-template-columns: 1fr;
   }
 }
