@@ -591,3 +591,25 @@ h5 {
     grid-template-columns: 1fr;
   }
 }
+
+.sponsers{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 40px;
+}
+.sponsers div > img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .sponsers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sponsers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
